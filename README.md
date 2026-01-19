@@ -42,10 +42,23 @@ A Spring Boot RESTful API for managing student data with validation, exception h
 
 ## ❌ Validation Example
 
-**Request**
+### Request (Invalid Input)
+
 ```json
 {
   "name": "",
   "email": "abc",
   "dob": "2002-01-01"
+}
+
+### Response (400 Bad Request)
+
+```json
+{
+  "status": 400,
+  "error": "Validation Failed",
+  "messages": {
+    "name": "Name is mandatory",
+    "email": "Email should be valid"
+  }
 }

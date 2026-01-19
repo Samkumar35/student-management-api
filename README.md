@@ -59,3 +59,9 @@ A Spring Boot RESTful API for managing student data with validation, exception h
     "email": "Email should be valid"
   }
 }
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) © 2026 Sam Kumar.
